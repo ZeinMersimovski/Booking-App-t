@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="booking-container">
+        <h2>True Booking</h2>
+        <nav>
+            <a href="index.html">Book Appointment</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Your Full Name:</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" placeholder="+1 555-1234" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select id="service" required>
+                    <option value="haircut">Haircut</option>
+                    <option value="massage">Massage</option>
+                    <option value="manicure">Manicure</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Any specific requests or comments"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="button" id="bookButton">Book Now</button>
+                <button type="button" id="clearButton">Clear</button>
+            </div>
+        </form>
+
+        <div id="confirmation-modal">
+            <div id="modal-content">
+                <h3>Booking Confirmed!</h3>
+                <p>Your appointment with True Booking has been booked successfully.</p>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
